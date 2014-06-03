@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linebg"
+        android:paddingBottom="1dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@color/whitegray"
+            android:paddingLeft="@dimen/small_padding"
+            android:paddingRight="@dimen/small_padding"
+            android:paddingTop="@dimen/medium_padding"
+            android:paddingBottom="@dimen/medium_padding">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvReportItemDate"
+                android:gravity="center|center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/gray1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="@dimen/size_fontsubtitle" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvReportItemHour"
+                android:gravity="center|center_vertical"
+                android:textColor="@color/gray1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:autoText="false"
+                android:textSize="@dimen/size_fontsubtitle"
+                android:layout_marginTop="@dimen/image_padding" />
+
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="500"
+            android:paddingLeft="@dimen/small_padding"
+            android:paddingRight="@dimen/small_padding"
+            android:paddingTop="@dimen/medium_padding"
+            android:paddingBottom="@dimen/medium_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvReportItemCourse"
+                android:paddingBottom="2dip"
+                android:textColor="@color/green2"
+                android:paddingLeft="@dimen/small_padding"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="@dimen/size_fontsubtitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tvReportItemAttControl"
+                android:paddingLeft="@dimen/small_padding"
+                android:textColor="@color/gray1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="@dimen/size_fontsubtitle" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/small_avatar_size"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="@style/StatusText"
+                android:id="@+id/tvReportItemStatus"
+                android:paddingLeft="@dimen/padding_status"
+                android:paddingRight="@dimen/padding_status"
+                android:gravity="center|center_vertical"
+                android:textStyle="bold"
+                android:textSize="@dimen/size_takestatus" />
+
+            <TextView
+                android:layout_width="@dimen/remarks_arrow_size"
+                android:layout_height="@dimen/remarks_arrow_size"
+                android:textAppearance="@style/StatusText"
+                android:id="@+id/tvReportItemRemarks"
+                android:padding="@dimen/default_padding"
+                android:gravity="center|center_vertical"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/size_takestatus"
+                android:focusable="false"
+                android:background="@drawable/remarks_spinner" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

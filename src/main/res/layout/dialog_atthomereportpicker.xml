@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="net.mindeos.attmobile.dialogs.AttControlReportPicker">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray2"
+            android:padding="20dip"
+            android:id="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/report_settings"
+            android:textColor="@color/white" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:paddingTop="10dip"
+            android:paddingRight="20dip"
+            android:paddingBottom="20dip"
+            android:layout_below="@+id/textView">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dialog_rowheight"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/user"
+                    android:id="@+id/tvReportPickerStudent"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dialog_rowheight"
+                    android:id="@+id/spnAthReportPickerStudent"
+                    android:layout_column="1"
+                    android:layout_weight="1000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dialog_rowheight"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/course"
+                    android:id="@+id/tvReportPickerCourse"
+                    android:layout_column="0"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dialog_rowheight"
+                    android:id="@+id/spnAthReportPickerCourse"
+                    android:layout_column="1"
+                    android:layout_weight="1000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dialog_rowheight"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/startdate"
+                    android:id="@+id/textView4"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="15dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TextView.SpinnerItem"
+                    android:id="@+id/tvAthReportPickerStartDate"
+                    android:layout_column="1"
+                    android:background="@drawable/gray_spinner"
+                    android:layout_weight="1000"
+                    android:padding="12dip" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dialog_rowheight"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/enddate"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TextView.SpinnerItem"
+                    android:id="@+id/tvAthReportPickerEndDate"
+                    android:layout_column="1"
+                    android:background="@drawable/gray_spinner"
+                    android:layout_weight="1000"
+                    android:padding="12dip" />
+            </TableRow>
+        </TableLayout>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pbReportPickerLoading"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

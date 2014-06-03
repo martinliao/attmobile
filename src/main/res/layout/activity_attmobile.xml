@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="net.mindeos.attmobile.app.AttMobile"
+    android:gravity="center|center_vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/schedule"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="false"
+        android:padding="@dimen/activity_margin"
+        android:background="@color/black99">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgLogo"
+                android:src="@drawable/attmobile_logo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/login_logomargin"
+                android:layout_marginBottom="@dimen/login_logomargin"
+                android:layout_alignParentRight="true"
+                android:scaleType="center" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etMoodleSite"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/white"
+                android:hint="@string/moodlesite"
+                android:layout_below="@+id/imgLogo"
+                android:padding="@dimen/login_padding"
+                android:textSize="@dimen/default_fontsize" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etUsername"
+                android:background="@color/white"
+                android:hint="@string/username"
+                android:padding="@dimen/login_padding"
+                android:layout_below="@+id/etMoodleSite"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/login_separation"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/default_fontsize" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/etPassword"
+                android:background="@color/white"
+                android:hint="@string/password"
+                android:layout_marginTop="@dimen/login_separation"
+                android:padding="@dimen/login_padding"
+                android:layout_below="@+id/etUsername"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/default_fontsize" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:id="@+id/btnLogin"
+                android:background="@color/green2"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/login_separation"
+                android:layout_below="@+id/etPassword"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/login_doublepadding"
+                android:onClick="login"
+                android:textSize="@dimen/default_fontsize" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"
+                android:id="@+id/chkRememberSession"
+                android:layout_below="@+id/btnLogin"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/white"
+
+                android:layout_marginTop="@dimen/activity_login_padding"
+                android:button="@drawable/whitecheckbox"
+                android:textSize="@dimen/default_fontsize" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pbLogin"
+                android:layout_below="@+id/chkRememberSession"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_between_margin"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

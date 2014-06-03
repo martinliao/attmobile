@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.mindeos.attmobile.app.AttControlActivity" >
+
+    <item android:id="@+id/sessions_reports"
+        android:icon="@drawable/ic_action_reports"
+        android:title="@string/action_reports"
+        android:showAsAction="ifRoom" />
+
+    <item android:id="@+id/sessions_newsession"
+        android:icon="@drawable/ic_action_new"
+        android:title="@string/action_newsession"
+        android:showAsAction="ifRoom" />
+
+
+</menu>

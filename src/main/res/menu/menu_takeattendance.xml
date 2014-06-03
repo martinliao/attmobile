@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.mindeos.attmobile.app.TakeAttendanceActivity" >
+
+
+
+    <item android:id="@+id/action_take_attendance_setallto"
+        android:icon="@drawable/ic_action_select_all"
+        android:title="@string/action_setallto"
+        android:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_take_attendance_save"
+        android:icon="@drawable/ic_action_save"
+        android:title="@string/action_save"
+        android:showAsAction="ifRoom" />
+
+
+
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:background="@drawable/mainbg"
+        android:layout_alignParentEnd="false"
+        android:layout_margin="0dip"
+        android:padding="@dimen/default_padding">
+
+
+        <ImageView
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:id="@+id/imNavigatorHeader"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/userplaceholder"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvNavigatorHeader1"
+            android:layout_alignTop="@+id/imNavigatorHeader"
+            android:layout_toRightOf="@+id/imNavigatorHeader"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/attcontrol_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvNavigatorHeader2"
+            android:textColor="@color/white88"
+            android:textSize="@dimen/size_fontsubtitle"
+            android:layout_below="@+id/tvNavigatorHeader1"
+            android:layout_alignLeft="@+id/tvNavigatorHeader1"
+            android:layout_alignStart="@+id/tvNavigatorHeader1" />
+    </RelativeLayout>
+</RelativeLayout>

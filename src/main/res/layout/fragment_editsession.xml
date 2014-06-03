@@ -1,0 +1,145 @@
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/shattered">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pbEditSessionLoading"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/default_margin"
+            android:background="@drawable/cardbg">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_padding">
+
+                <TextView
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:id="@+id/lblEditSessionDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                   />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:id="@+id/etEditSessionDate"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="@dimen/activity_login_padding"
+                    android:background="@drawable/gray_spinner"
+                    android:padding="@dimen/field_padding"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="true"
+                    android:textIsSelectable="false"
+                        android:textAppearance="@android:style/TextAppearance.Widget.TextView.SpinnerItem"
+                    android:inputType="date" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/field_height"
+                        android:id="@+id/etEditSessionTime"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/gray_spinner"
+                        android:padding="@dimen/field_padding"
+                        android:textAppearance="@android:style/TextAppearance.Widget.TextView.SpinnerItem"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:enabled="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:selectAllOnFocus="false"
+                        android:singleLine="true"
+                        android:textIsSelectable="false"
+                        android:inputType="time"
+                        android:layout_marginBottom="@dimen/activity_login_padding"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:id="@+id/lblEditSessionDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sessionduration" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:id="@+id/etEditSessionDuration"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/gray_spinner"
+                    android:padding="@dimen/field_padding"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TextView.SpinnerItem"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="true"
+                    android:textIsSelectable="false"
+                    android:inputType="date"
+                    android:layout_marginBottom="@dimen/activity_login_padding"
+                    />
+
+
+                <TextView
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:id="@+id/lblEditSessionDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Widget.TextView.SpinnerItem"
+
+                android:id="@+id/etEditSessionDescripton"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:minHeight="@dimen/field_height"
+                android:inputType="textMultiLine" />
+
+
+            </LinearLayout>
+
+       </ScrollView>
+
+    </RelativeLayout>

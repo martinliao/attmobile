@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.mindeos.attmobile.app.AttControlFragment"
+    android:background="@drawable/innerbg"
+    >
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbSessionsLoading"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/attcontrol_barheight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/dropshadow"
+        android:id="@+id/relativeLayout"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="2dp">
+
+        <ImageButton
+            android:layout_width="@dimen/attcontrol_barheight"
+            android:layout_height="@dimen/attcontrol_barheight"
+            android:id="@+id/btnSessionsPrevious"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_action_previous_item"
+            android:scaleType="centerInside"
+            android:background="?android:selectableItemBackground" />
+
+        <ImageButton
+            android:layout_width="@dimen/attcontrol_barheight"
+            android:layout_height="@dimen/attcontrol_barheight"
+            android:id="@+id/btnSessionsNext"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_action_next_item"
+            android:scaleType="centerInside"
+            android:background="?android:selectableItemBackground" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvSessionsDate"
+            android:layout_toRightOf="@+id/btnSessionsPrevious"
+            android:layout_toLeftOf="@+id/btnSessionsNext"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="SessionsFragment.selectDate"
+            android:background="@drawable/spinner_background_holo_light"
+            android:textSize="@dimen/default_fontsize" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nosessionsdate"
+        android:id="@+id/tvNoSessions"
+        android:layout_alignTop="@+id/lstSessions"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="invisible"
+        android:textStyle="italic"
+        android:textColor="@color/gray1"
+        android:textSize="@dimen/attcontrol_title" />
+
+    <ListView
+        android:id="@+id/lstSessions"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="0dip"
+        android:divider="#00000000"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </ListView>
+
+</RelativeLayout>

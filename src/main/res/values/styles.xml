@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_previous_item_white</item>
+    </style>
+
+    <style name="ActionBar"
+        parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/green2</item>
+        <item name="android:icon">@drawable/attmobile_actionbarlogo</item>
+        <item name="android:titleTextStyle">@style/Actionbar.Title</item>
+        <item name="android:subtitleTextStyle">@style/Actionbar.Subtitle</item>
+    </style>
+
+    <style name="Actionbar.Title" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Actionbar.Subtitle" parent="android:TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/white88</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="StatusText" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/gray1</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="AttControlPickerTheme" parent="BetterPickersDialogFragment.Light">
+        <item name="bpDialogBackground">@color/white</item>
+        <item name="bpTextColor">@color/gray1</item>
+        <item name="bpDeleteIcon">@drawable/ic_backspace</item>
+        <item name="bpKeyBackground">@drawable/button_background</item>
+        <item name="bpButtonBackground">@drawable/button_background</item>
+    </style>
+</resources>

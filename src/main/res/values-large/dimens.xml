@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- VALUES FOR LARGE SCREENS-->
+<resources>
+    <dimen name="default_fontsize">18sp</dimen>
+    <dimen name="default_margin">5dip</dimen>
+    <dimen name="default_padding">15dip</dimen>
+
+    <dimen name="activity_margin">30dip</dimen>
+
+    <dimen name="login_separation">10dip</dimen>
+    <dimen name="login_padding">15dip</dimen>
+    <dimen name="login_doublepadding">25dip</dimen>
+    <dimen name="login_logomargin">30dip</dimen>
+
+    <dimen name="attcontrol_barheight">50dip</dimen>
+    <dimen name="attcontrol_title">20dip</dimen>
+    <dimen name="attcontrol_subtitle">16dip</dimen>
+
+    <dimen name="image_padding">4dip</dimen>
+    <dimen name="avatar_size">80dip</dimen>
+    <dimen name="small_avatar_size">70dip</dimen>
+    <dimen name="sidebar_header">100dip</dimen>
+
+    <dimen name="remarks_arrow_size">16dip</dimen>
+
+    <dimen name="small_padding">5dip</dimen>
+    <dimen name="medium_padding">10dip</dimen>
+
+
+    <dimen name="size_fontitle">22dip</dimen>
+    <dimen name="size_fontsubtitle">16dip</dimen>
+    <dimen name="size_buttonwidth">50dip</dimen>
+    <dimen name="margin_innersession">10dip</dimen>
+    <dimen name="size_takestatus">32dip</dimen>
+    <dimen name="padding_status">10dip</dimen>
+</resources>

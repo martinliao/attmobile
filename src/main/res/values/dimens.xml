@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- VALUES FOR SMALL SCREENS-->
+<resources>
+    <dimen name="default_fontsize">16sp</dimen>
+    <dimen name="default_margin">5dip</dimen>
+    <dimen name="default_padding">5dip</dimen>
+
+
+    <dimen name="activity_margin">15dip</dimen>
+    <dimen name="login_padding">10dip</dimen>
+    <dimen name="login_separation">5dip</dimen>
+    <dimen name="login_doublepadding">15dip</dimen>
+    <dimen name="login_logomargin">15dip</dimen>
+
+    <dimen name="attcontrol_barheight">40dip</dimen>
+    <dimen name="attcontrol_title">16dip</dimen>
+    <dimen name="attcontrol_subtitle">13dip</dimen>
+
+
+    <dimen name="field_height">45dip</dimen>
+    <dimen name="field_padding">12dip</dimen>
+
+
+    <dimen name="image_padding">2dip</dimen>
+    <dimen name="avatar_size">60dip</dimen>
+    <dimen name="small_avatar_size">50dip</dimen>
+    <dimen name="sidebar_header">70dip</dimen>
+
+    <dimen name="remarks_arrow_size">12dip</dimen>
+    <dimen name="small_padding">5dip</dimen>
+
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">30dp</dimen>
+    <dimen name="activity_vertical_margin">30dp</dimen>
+    <dimen name="activity_between_margin">15dp</dimen>
+    <dimen name="activity_logo_margin">50dp</dimen>
+    <dimen name="activity_login_padding">10dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="size_fontitle">18dip</dimen>
+    <dimen name="size_fontsubtitle">12dip</dimen>
+    <dimen name="size_buttonwidth">30dip</dimen>
+    <dimen name="size_takestatus">24dip</dimen>
+    <dimen name="margin_innersession">5dip</dimen>
+
+
+
+    <dimen name="padding_status">5dip</dimen>
+    <dimen name="medium_padding">10dip</dimen>
+
+
+
+    <dimen name="dialog_rowheight">45dip</dimen>
+    <dimen name="tab_host_default_height">48dp</dimen>
+    <dimen name="second_row_height">20dip</dimen>
+    <dimen name="tab_padding">15dip</dimen>
+</resources>

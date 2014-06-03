@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.mindeos.attmobile.app.AboutActivity.AboutFragment">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/schedule"
+        android:scaleType="centerCrop" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:background="@color/black99"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="false"
+        android:padding="@dimen/activity_margin">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgLogo"
+            android:src="@drawable/attmobile_logo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/login_logomargin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_alignParentRight="true"
+            android:scaleType="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_version"
+            android:id="@+id/textView"
+            android:layout_below="@+id/imgLogo"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white88"
+            android:textSize="@dimen/attcontrol_subtitle" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/about_developedby"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/login_logomargin"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_achart"
+            android:textColor="@color/white88"
+            android:textSize="@dimen/attcontrol_subtitle"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_license"
+            android:textColor="@color/white88"
+            android:textSize="@dimen/attcontrol_subtitle"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_thirdparty"
+            android:textColor="@color/white88"
+            android:textSize="@dimen/attcontrol_subtitle"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="4dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_betterpickers"
+            android:textColor="@color/white88"
+            android:textSize="@dimen/attcontrol_subtitle"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="2dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_colorpicker"
+            android:textColor="@color/white88"
+            android:textSize="@dimen/attcontrol_subtitle"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="2dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_urlimageviewhelper"
+            android:textColor="@color/white88"
+            android:textSize="@dimen/attcontrol_subtitle"
+            android:gravity="center_horizontal"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_photography"
+            android:id="@+id/textView9"
+            android:textColor="@color/whiteAA"
+            android:textSize="@dimen/attcontrol_subtitle"
+            android:layout_below="@+id/textView8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

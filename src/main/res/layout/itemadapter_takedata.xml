@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_marginRight="@dimen/default_margin"
+        android:background="@drawable/cardbg"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:padding="1dp"
+        android:paddingBottom="@dimen/default_padding"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvTakeDataFullname"
+            android:textColor="@color/green2"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/relativeLayout"
+            android:layout_alignTop="@+id/relativeLayout"
+            android:layout_toLeftOf="@+id/tvTakeDataStatus"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/default_padding"
+            android:textSize="@dimen/attcontrol_title" />
+
+        <TextView
+            android:layout_width="@dimen/small_avatar_size"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/StatusText"
+            android:id="@+id/tvTakeDataStatus"
+            android:padding="@dimen/padding_status"
+            android:gravity="center|center_vertical"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/size_takestatus" />
+
+        <TextView
+            android:layout_width="@dimen/remarks_arrow_size"
+            android:layout_height="@dimen/remarks_arrow_size"
+            android:textAppearance="@style/StatusText"
+            android:id="@+id/tvTakeDataRemarks"
+            android:padding="@dimen/default_padding"
+            android:gravity="center|center_vertical"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/size_takestatus"
+            android:focusable="false"
+            android:background="@drawable/remarks_spinner" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/image_padding"
+            android:background="@color/whitegray"
+            android:id="@+id/relativeLayout"
+            android:gravity="top">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgTakeDataUserpicture"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

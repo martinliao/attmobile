@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvSessionTime"
+            android:background="@color/gray3"
+            android:padding="10dp"
+            android:gravity="center|center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/gray1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:autoText="false"
+            android:textSize="@dimen/attcontrol_title"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="500"
+            android:layout_margin="@dimen/margin_innersession">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tvSessionCourse"
+                android:paddingBottom="2dip"
+                android:textColor="@color/green2"
+                android:paddingLeft="@dimen/small_padding"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="@dimen/attcontrol_title" />
+
+            <View android:background="@color/green1" android:layout_width="match_parent" android:layout_height="1dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tvSessionAttendance"
+                android:layout_marginTop="3dip"
+                android:paddingLeft="@dimen/small_padding"
+                android:textColor="@color/gray1"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="@dimen/attcontrol_subtitle" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="@dimen/size_buttonwidth"
+            android:layout_height="fill_parent"
+            android:id="@+id/imbTake"
+            android:background="@color/whitegray"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:src="@drawable/arrow_take"
+            android:scaleType="centerInside"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

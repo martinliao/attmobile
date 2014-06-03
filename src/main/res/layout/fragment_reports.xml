@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/innerbg"
+    tools:context="net.mindeos.attmobile.app.ReportsActivity$PlaceholderFragment">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbReportLoading"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/selectreportfilters"
+        android:id="@+id/tvReportNotLoaded"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="gone"
+        android:padding="20dip"
+        android:textStyle="italic"
+        android:textColor="@color/gray1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/attcontrol_title" />
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabReports"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#DADADA"
+                ></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabSummary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scrollView" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cardbg"
+                                android:layout_marginLeft="@dimen/default_margin"
+                                android:layout_marginTop="@dimen/default_margin"
+                                android:id="@+id/lyReportsUserData"
+                                android:layout_marginRight="@dimen/default_margin">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:background="@color/whitegray"
+                                    android:id="@+id/relativeLayout">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/avatar_size"
+                                        android:layout_height="@dimen/avatar_size"
+                                        android:id="@+id/imgReportPicture"
+                                        android:layout_alignParentTop="true"
+                                        android:src="@drawable/userplaceholder"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_margin="@dimen/image_padding"
+                                        />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/default_margin">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceLarge"
+                                        android:id="@+id/tvReportTitle"
+                                        android:paddingBottom="2dip"
+                                        android:textColor="@color/green2"
+                                        android:paddingLeft="@dimen/small_padding"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:textSize="@dimen/attcontrol_title" />
+
+                                    <View android:background="@color/green1" android:layout_width="match_parent" android:layout_height="1dp"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:layout_below="@+id/tvReportTitle"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:id="@+id/vReportTitleLine" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvReportSubtitle"
+                                        android:paddingBottom="2dip"
+                                        android:textColor="@color/green4"
+                                        android:paddingLeft="@dimen/small_padding"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:textSize="@dimen/attcontrol_subtitle"
+                                        android:layout_below="@+id/vReportTitleLine"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:paddingTop="5dip" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvReportToDate"
+                                        android:paddingLeft="5dp"
+                                        android:textColor="@color/gray1"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:textSize="@dimen/attcontrol_subtitle"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_below="@+id/tvReportFromDate"
+                                        android:layout_alignParentLeft="true" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:id="@+id/tvReportFromDate"
+                                        android:paddingLeft="5dp"
+                                        android:textColor="@color/gray1"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:textSize="@dimen/attcontrol_subtitle"
+                                        android:layout_below="@+id/tvReportSubtitle"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/cardbg"
+                                android:id="@+id/lyReportsSummary"
+                                android:layout_margin="@dimen/default_margin"
+                                android:padding="@dimen/default_padding">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:orientation="horizontal"
+                                    android:id="@+id/lyReportsChart" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabDetail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="@dimen/default_margin"
+                    android:background="@drawable/cardbg"
+                    android:paddingTop="0dip"
+                    android:paddingBottom="@dimen/small_padding"
+                    android:paddingLeft="@dimen/small_padding"
+                    android:paddingRight="@dimen/small_padding">
+
+                    <ListView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/lvReportDetail"
+                        />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

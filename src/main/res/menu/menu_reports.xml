@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.mindeos.attmobile.app.ReportsActivity" >
+
+    <item android:id="@+id/reports_settings"
+        android:icon="@drawable/ic_action_filter"
+        android:title="@string/action_filters"
+        android:showAsAction="ifRoom" />
+
+    <item android:id="@+id/reports_save"
+        android:icon="@drawable/ic_action_save"
+        android:visible="false"
+        android:title="@string/action_save"
+        android:showAsAction="ifRoom" />
+
+
+
+</menu>
